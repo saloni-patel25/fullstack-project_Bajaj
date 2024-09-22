@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM Qualifier</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SRM Qualifier Frontend</h1>
+        <textarea id="json-input" placeholder='Enter JSON like {"data": ["A", "B", "1", "a"]}'></textarea>
+        <br>
+        <button id="submit-btn">Submit</button>
+        <p id="error-message" class="error"></p>
+
+        <div id="response-container" class="response">
+            <h2>Response</h2>
+            <div>
+                <label><input type="checkbox" id="show-alphabets"> Show Alphabets</label>
+                <label><input type="checkbox" id="show-numbers"> Show Numbers</label>
+                <label><input type="checkbox" id="show-highest-lower"> Show Highest Lowercase Alphabet</label>
+            </div>
+            <div id="filtered-response"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
